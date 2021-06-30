@@ -26,9 +26,9 @@ class _DetailState extends State<Detail> {
         new RaisedButton(
           child: new Text(
             "OK DELETE!",
-            style: new TextStyle(color: Colors.black),
+            style: new TextStyle(color: Colors.blue),
           ),
-          color: Colors.red,
+          color: Colors.green,
           onPressed: () {
             deleteData();
             Navigator.of(context).push(new MaterialPageRoute(
@@ -39,7 +39,7 @@ class _DetailState extends State<Detail> {
         // ignore: deprecated_member_use
         new RaisedButton(
           child: new Text("CANCEL", style: new TextStyle(color: Colors.black)),
-          color: Colors.green,
+          color: Colors.yellow,
           onPressed: () => Navigator.pop(context),
         ),
       ],
@@ -102,7 +102,7 @@ class _DetailState extends State<Detail> {
                     // ignore: deprecated_member_use
                     new RaisedButton(
                       child: new Text("DELETE"),
-                      color: Colors.red,
+                      color: Colors.yellow,
                       onPressed: () => confirm(),
                     ),
                   ],
